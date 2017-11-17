@@ -1,0 +1,460 @@
+/* 
+ * Deprecated DNN CSS class names will remain available for some time
+ * before being  permanently removed. Removal will occur according to
+ * the  following process:
+ *
+ * 1. Removal will only occur with a major (x.y) release, never
+ *    with a maintenance (x.y.z) release.
+ * 2. Removal will not occur less than six months after the release
+ *    when it was deprecated.
+ * 3. Removal will not occur until after deprecation has been noted 
+ *    in at least two major releases.
+ *
+ *                                              |        |Planned |
+ *  Name                                        |Release |Removal |
+ *----------------------------------------------+--------+--------+
+ * Mod{NAME}C                                     5.6.2    6.2
+ *   {NAME} = sanitized version of the DesktopModule Name 
+ *   Used on <div> tag surrounding Module Content, inside container
+ *----------------------------------------------+--------+--------+
+ */  
+
+
+
+/* PAGE BACKGROUND */
+/* background color for the header at the top of the page  */
+.HeadBg {
+}
+
+/* background color for the content part of the pages */
+Body
+{
+}
+
+.ControlPanel {
+}
+
+/* background/border colors for the selected tab */
+.TabBg {
+}
+
+.LeftPane  { 
+}
+
+.ContentPane  { 
+}
+
+.RightPane  { 
+}
+
+/* text style for the selected tab */
+.SelectedTab {
+}
+
+/* hyperlink style for the selected tab */
+A.SelectedTab:link {
+}
+
+A.SelectedTab:visited  {
+}
+
+A.SelectedTab:hover    {
+}
+
+A.SelectedTab:active   {
+}
+
+/* text style for the unselected tabs */
+.OtherTabs {
+}
+    
+/* hyperlink style for the unselected tabs */
+A.OtherTabs:link {
+}
+
+A.OtherTabs:visited  {
+}
+
+A.OtherTabs:hover    {
+}
+
+A.OtherTabs:active   {
+}
+
+/* GENERAL */
+/* style for module titles */
+.Head   {
+}
+
+/* style of item titles on edit and admin pages */
+.SubHead    {
+}
+
+/* module title style used instead of Head for compact rendering by QuickLinks and Signin modules */
+.SubSubHead {
+}
+
+/* text style used for most text rendered by modules */
+.Normal
+{
+}
+
+/* text style used for textboxes in the admin and edit pages, for Nav compatibility */
+.NormalTextBox
+{
+}
+
+.NormalRed
+{
+}
+
+.NormalBold
+{
+}
+
+/* text style for buttons and link buttons used in the portal admin pages */
+.CommandButton     {
+}
+    
+/* hyperlink style for buttons and link buttons used in the portal admin pages */
+A.CommandButton:link {
+}
+
+A.CommandButton:visited  {
+}
+
+A.CommandButton:hover    {
+}
+    
+A.CommandButton:active   {
+}
+
+/* button style for standard HTML buttons */
+.StandardButton     {
+}
+
+/* GENERIC */
+H1  {
+}
+
+H2  {
+}
+
+H3  {
+}
+
+H4  {
+}
+
+H5, DT  {
+}
+
+H6  {
+}
+
+TFOOT, THEAD    {
+}
+
+TH  {
+}
+
+A:link  {
+}
+
+A:visited   {
+}
+
+A:hover {
+}
+
+A:active    {
+}
+
+SMALL   {
+}
+
+BIG {
+}
+
+BLOCKQUOTE, PRE {
+}
+
+
+UL LI   {
+}
+
+UL LI LI    {
+}
+
+UL LI LI LI {
+}
+
+OL LI   {
+}
+
+OL OL LI    {
+}
+
+OL OL OL LI {
+}
+OL UL LI   {
+}
+
+HR {
+}
+
+/* MODULE-SPECIFIC */
+/* text style for reading messages in Discussion */    
+.Message    {
+}   
+
+/* style of item titles by Announcements and events */
+.ItemTitle    {
+}
+
+/* Menu-Styles */
+/* Module Title Menu */
+.ModuleTitle_MenuContainer {
+}
+
+.ModuleTitle_MenuBar {
+}
+
+.ModuleTitle_MenuItem {
+}
+
+.ModuleTitle_MenuIcon {
+}
+
+.ModuleTitle_SubMenu {
+}
+
+.ModuleTitle_MenuBreak {
+}
+
+.ModuleTitle_MenuItemSel {
+}
+
+.ModuleTitle_MenuArrow {
+}
+
+.ModuleTitle_RootMenuArrow {
+}
+
+/* Main Menu */
+
+.MainMenu_MenuContainer {
+}
+
+.MainMenu_MenuBar {
+}
+
+.MainMenu_MenuItem {
+}
+
+.MainMenu_MenuIcon {
+}
+
+.MainMenu_SubMenu {
+}
+
+.MainMenu_MenuBreak {
+}
+
+.MainMenu_MenuItemSel {
+}
+
+.MainMenu_MenuArrow {
+}
+
+.MainMenu_RootMenuArrow {
+}
+
+/* Login Styles */
+.LoginPanel{
+}
+
+.LoginTabGroup{
+}
+
+.LoginTab {
+}
+
+.LoginTabSelected{
+}
+
+.LoginTabHover{
+}
+
+.LoginContainerGroup{
+}
+
+.LoginContainer{
+}
+
+.telnreoc {
+  font-size: 22px !important;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px !important;
+  color: #307FBD !important;
+}
+.bigfont {
+  font-size: 20px !important;
+}
+.bigfontorange {
+  font-size: 20px !important;
+  color: #EE7F01 !important;
+}
+.orangelist {
+list-style-image: url('eoc.ivendo-cms.nl/Portals/1/orangelistsquare.png') !important;
+}
+.footerpane a:hover {
+  color: #EE7F01;
+}
+
+.ModFormMasterC td {
+  padding-bottom: 0 !important;
+}
+
+.ModFormMasterC label.SubHead {
+  padding: 0px !important;
+}
+
+.ModFormMasterC input[type="text"] {
+  min-width: 180px !important;
+}
+
+#dnn_ctr1758_FormMaster_trDefaultSubmitButton > td {
+  padding: 10px 0px 0px 0px !important;
+}
+.ModFormMasterC a.CommandButton {
+  background-color: #EE7F01 !important;
+  color: #FFFFFF !important;
+  display: table-cell;
+  padding: 5px 25px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  width: 142px !important;
+}
+
+.ModFormMasterC a.CommandButton:hover {
+  background-color: #13235B !important;
+
+}
+
+.DnnModule.DnnModule-FormMaster.DnnModule-1758 {
+  margin-top: -20px !important;
+  margin-left: -3px !important;
+}
+
+#dnn_ctr1758_FormMaster_cmdSubmit {
+  margin-right: 0 !important;
+}
+
+.ModFormMasterC input[type="text"] {
+  min-width: 0 !important;
+}
+
+.NormalTextBoxRED {
+  color: #13235B  !important;
+  font-weight: bold;
+  margin-bottom: 25px !important;
+}
+
+.NormalTextBoxREDtop {
+  color: #13235B !important;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+
+#dnn_ctr1764_FormMaster_ctl_f446f028210b4533a4ab9a1a53d1f944, #dnn_ctr1764_FormMaster_ctl_1bd6bd63edf94b37b44c0283ea9c417c, #dnn_ctr1764_FormMaster_ctl_1234c0121cf7471e81ae8181e5969e95, #dnn_ctr1764_FormMaster_ctl_572614445a4d4cf4a04c843ab48b075a, #dnn_ctr1764_FormMaster_ctl_be1029fbc90e4ef6bb6c7bcb8c08c9f4, #dnn_ctr1764_FormMaster_ctl_f0263c660ded4095863a43fab926c860, #dnn_ctr1764_FormMaster_ctl_b60611f9d9a3409683b2a9069ba06d99, #dnn_ctr1764_FormMaster_ctl_b1c4727d0b7b42538ed55da49ba037b8, #dnn_ctr1764_FormMaster_ctl_49aff4d04f80401384baa354973c3882, #dnn_ctr1765_FormMaster_ctl_8ea3f9f5aec8427bbeac3bce5a597d36, #dnn_ctr1766_FormMaster_ctl_8ea3f9f5aec8427bbeac3bce5a597d36, #dnn_ctr1767_FormMaster_ctl_5ead01f912b6451ba022b6a38e189928, #dnn_ctr1767_FormMaster_ctl_6676e7424ebf464d80fab32af9eb2a95, #dnn_ctr1768_FormMaster_ctl_4d38d07d128d4c4c9a05c2aebd45046c, #dnn_ctr1768_FormMaster_ctl_d64a622b90ca450b81c1b749a3ea3acb, #dnn_ctr1768_FormMaster_ctl_0b6d30cbe6b84754b72fc28803b88c88, #dnn_ctr1768_FormMaster_ctl_abe9571f07bd4deb92a1128b02e2ec03, #dnn_ctr1768_FormMaster_ctl_5ae1b088f1e844628c20e9ff6c46bd24, #dnn_ctr1768_FormMaster_ctl_3f51d0401d01477f8232ae6ec7671735, #dnn_ctr1768_FormMaster_ctl_5cfb6b9628564b2a951cd8bb431136bf, #dnn_ctr1768_FormMaster_ctl_2beff56f4c874316bcdf79a93e417fc6, #dnn_ctr1768_FormMaster_ctl_83cf387765b14bed8628a98f9cee69d6, #dnn_ctr1768_FormMaster_ctl_4c2a240fc4d84962a67bf8ff63341cfb, #dnn_ctr1771_FormMaster_ctl_4d38d07d128d4c4c9a05c2aebd45046c, #dnn_ctr1771_FormMaster_ctl_d64a622b90ca450b81c1b749a3ea3acb, #dnn_ctr1771_FormMaster_ctl_0b6d30cbe6b84754b72fc28803b88c88, #dnn_ctr1771_FormMaster_ctl_83cf387765b14bed8628a98f9cee69d6, #dnn_ctr1771_FormMaster_ctl_4c2a240fc4d84962a67bf8ff63341cfb, #dnn_ctr1770_FormMaster_ctl_4d38d07d128d4c4c9a05c2aebd45046c, #dnn_ctr1770_FormMaster_ctl_d64a622b90ca450b81c1b749a3ea3acb, #dnn_ctr1770_FormMaster_ctl_f7f54b327e3b45a0bde50530a289cade, #dnn_ctr1770_FormMaster_ctl_5ab5c3405f3a4d8a9f72cd42915dbbf6, #dnn_ctr1770_FormMaster_ctl_562a9d07852d4384a11927df219c3583, #dnn_ctr1770_FormMaster_ctl_0b6d30cbe6b84754b72fc28803b88c88, #dnn_ctr1770_FormMaster_ctl_83cf387765b14bed8628a98f9cee69d6, #dnn_ctr1770_FormMaster_ctl_b1ef6d2019a644f2b8bd7845e7570dc4, #dnn_ctr1770_FormMaster_ctl_4c2a240fc4d84962a67bf8ff63341cfb, #dnn_ctr1772_FormMaster_ctl_4d38d07d128d4c4c9a05c2aebd45046c, #dnn_ctr1772_FormMaster_ctl_d64a622b90ca450b81c1b749a3ea3acb, #dnn_ctr1772_FormMaster_ctl_f7f54b327e3b45a0bde50530a289cade, #dnn_ctr1772_FormMaster_ctl_83cf387765b14bed8628a98f9cee69d6, #dnn_ctr1772_FormMaster_ctl_4c2a240fc4d84962a67bf8ff63341cfb, #dnn_ctr1773_FormMaster_ctl_5ead01f912b6451ba022b6a38e189928, #dnn_ctr1773_FormMaster_ctl_6676e7424ebf464d80fab32af9eb2a95, #dnn_ctr1767_FormMaster_ctl_e13873650ce74002802b019e8e905dbd {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#dnn_ctr1758_ContentPane {
+  margin-top: 20px !important;
+}
+
+#dnn_ctr659_dnnTITLE_titleLabel {
+  font-size: 12px !important;
+}
+
+#dnn_ctr667_HtmlModule_lblContent a:hover {
+  color: #EE7F01;
+}
+
+#dnn_ctr667_HtmlModule_lblContent a {
+  color: #003266 !important;
+}
+#dnn_ctr667_HtmlModule_lblContent a:hover {
+  color: #EE7F01 !important;
+}
+
+.NormalRed {
+  color: red !important;
+}
+
+.breadcrumbrow {
+  color: #003266 !important;
+}
+.breadcrumbrow a {
+  color: #003266 !important;
+}
+.breadcrumbrow a:hover {
+  color: #EE7F01 !important;
+}
+
+
+#dnn_ctr1768_FormMaster_ctl_e4341b1f4ae446cebc3f78db53d005d8, #dnn_ctr1768_FormMaster_ctl_e1179bb993f641fb83d2ee04a619c4cb, #dnn_ctr1768_FormMaster_ctl_80968ec275ea4663ac54da11a43775ac {
+  margin-bottom: 10px !important;
+}
+
+
+#ProductsMenu ul.vertical {
+  border-bottom: 0px !important;
+}
+
+.contmain.bluetext a {
+  color: #EE7F01;
+}
+.contmain.bluetext a:hover {
+  color: #13235B;
+}
+.footerwrapper a {
+  color: #13235B !important;
+}
+.footerwrapper a:hover {
+  color: #EE7F01 !important;
+}
+.linklist .linkitem a:hover {
+  color: white !important;
+}
+
+.Normal, p, td, th, div {
+  color: #13235B; 
+}
+a, a:link, a:visited, a:hover, a:active {
+  color: #EE7F01;
+}
+
+#dnn_ctr1590_NewsArticles_ucSubmitNews_txtDetails_txtDetails_contentIframe html {
+  background: none !important;
+}
+
+.Normal > div {
+  color: #13235B; 
+}
+
+.link_module > ul > li:nth-child(2)
+{
+    background-color: #ee7f01;
+}
+#dnn_RightPane > div.DnnModule-DNN_Links > div > div.contheader
+{
+	display:none;
+}
+
+
+
+

@@ -1,0 +1,100 @@
+<div id="funnelContainer" class="page-container">
+    <h2>Premie berekenen pleziervaart</h2>
+    <div class="funnel-accordion">
+        <h2 class="eoc-header"><a href="#">Algemene gegevens</a></h2>
+        <form (ngSubmit)="onSubmit()" #customerForm="ngForm" id="customerForm">
+            <fieldset class="eoc-fieldset">
+                <div>
+                    <label class="eoc-label">Aanhef</label>
+                    <select id="salutation" name="salutation" class="eoc-select" [(ngModel)]="customer.salutation" required>
+                        <option value="Dhr.">Dhr.</option>
+                        <option value="Mevr.">Mevr.</option>
+                    </select>
+                    <span class="required">*</span>
+                </div>
+                <div>
+                    <label class="eoc-label">Voorletters</label>
+                    <input id="initials" name="initials" type="text" maxlength="10" class="eoc-input" [(ngModel)]="customer.initials" required>
+                    <span class="required">*</span>
+                </div>
+                <div>
+                    <label class="eoc-label">Tussenvoegsel</label>
+                    <input id="middleInitials" name="middleInitials" type="text" maxlength="10" class="eoc-input" [(ngModel)]="customer.middleInitials">
+                </div>
+                <div>
+                    <label class="eoc-label">Achternaam</label>
+                    <input id="lastName" name="lastName" type="text" maxlength="40" class="eoc-input" [(ngModel)]="customer.lastName" required>
+                    <span class="required">*</span>
+                </div>
+                <div>
+                    <label class="eoc-label">Bedrijfsnaam</label>
+                    <input id="companyName" name="companyName" type="text" maxlength="40" class="eoc-input" [(ngModel)]="customer.companyName">
+                </div>
+                <div>
+                    <label class="eoc-label">Telefoon</label>
+                    <input id="phoneNumber" name="phoneNumber" type="text" required class="eoc-input" 
+                            [(ngModel)]="customer.phoneNumber" #customerPhoneNumber="ngModel" isPhoneNumber maxlength="10">
+                    <span class="required">*</span><br/>
+                    <div *ngIf="customerPhoneNumber.invalid && (customerPhoneNumber.touched || customerPhoneNumber.dirty)" class="alert alert-danger">
+                        <div *ngIf="customerPhoneNumber.errors.required">
+                            Telefoonnummer is verplicht
+                        </div>
+                        <div *ngIf="!customerPhoneNumber.errors.required">
+                            Telefoonnummer is onjuist
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="eoc-label">Mobiel</label>
+                    <input id="mobileNumber" name="mobileNumber" type="text" maxlength="10" class="eoc-input" [(ngModel)]="customer.mobileNumber">
+                </div>
+                <div>
+                    <label class="eoc-label">E-mail</label>
+                    <input id="emailAddress" name="emailAddress" type="email" required email class="eoc-input" 
+                            [(ngModel)]="customer.emailAddress" #customerEmail="ngModel" maxlength="40" >
+                    <span class="required">*</span>
+                    <div *ngIf="customerEmail.invalid && (customerEmail.touched || customerEmail.dirty)" class="alert alert-danger">
+                        <div *ngIf="customerEmail.errors.required">
+                            Email adres is verplicht
+                        </div>
+                        <div *ngIf="!customerEmail.errors.required">
+                            Email adres is onjuist
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="eocLabel">&nbsp;</label>
+                    <button type="submit" class="eoc-button" [disabled]="!customerForm.form.valid">Volgende</button>
+                    <a (click)="openModal('login-modal');" style="float:right;margin-top:25px;">ik ben een bestaande klant</a>
+                </div>
+            </fieldset>
+        </form>
+        <modal id="login-modal">
+            <div class="modal">
+                <div class="modal-body">
+                    <h1>Login</h1>
+                    <form>
+                        <div>
+                            <label class="eoc-label">Gebruikersnaam</label>
+                            <input id="userName" name="userName" type="text" maxlength="20" class="eoc-input">
+                        </div>
+                        <div>
+                            <label class="eoc-label">Wachtwoord</label>
+                            <input id="userPwd" name="userPwd" type="password" maxlength="10" class="eoc-input">
+                        </div>
+                        <button (click)="login();">Login</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-background"></div>
+        </modal>
+        <h2 class="eoc-header"><a href="#">Offerte adres</a></h2>
+        <h2 class="eoc-header"><a href="#">Scheepsgegevens</a></h2>
+        <h2 class="eoc-header"><a href="#">Gegevens hoofdmotor</a></h2>
+        <h2 class="eoc-header"><a href="#">Gegevens 2de hoofdmotor</a></h2>
+        <h2 class="eoc-header"><a href="#">Dekking</a></h2>
+        <h2 class="eoc-header"><a href="#">Ligplaats adres</a></h2>
+        <h2 class="eoc-header"><a href="#">Aanvullende vragen</a></h2>
+        <h2 class="eoc-header"><a href="#">Terugbellen</a></h2>
+    </div>
+</div>

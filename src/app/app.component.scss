@@ -1,0 +1,104 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #13235B;
+$heading-color-blue: #00437a;
+$heading-color-white: #ffffff;
+$heading-background-blue: #0076bd;
+$border-color-blue: #13235b;
+$input-background-grey: #f3f3f3;
+$input-border-darkgrey: #bfbfbf;
+$button-background-orange: #ee7f01;
+$button-background-hover: #f3f3f3;
+$element-background-disabled: #bfbfbf;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+#eocSite {
+
+    #mainContent {
+        margin: 10px;
+    }
+
+    font: 100% $font-stack;
+    color: $primary-color;
+
+    /* Generic styles */
+
+    h2 {
+        color: $heading-color-blue;
+        display: block;
+        font-size: 20px;
+    }
+
+    .eoc-header a, .eoc-header a:link, .eoc-header a:hover, .eoc-header a:visited, .eoc-header a:active {
+        margin: 0px 0px 3px 0px;
+        padding: 5px;
+        text-decoration: none;
+        display: block;
+        background-color: $heading-background-blue;
+        color: $heading-color-white;
+        text-decoration: none;
+        font-size: 16px;
+        margin-bottom: 10px;
+        height: auto;
+        line-height: 32px;
+    }
+
+    /* Forms */
+
+    .eoc-label {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        padding: 8px;
+        height: 37px;
+        width: 170px;
+        margin-right: 18px;
+        overflow: visible;
+        text-align: right;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .eoc-form-element {
+        background: $input-background-grey;
+        border: 1px solid $input-border-darkgrey;
+        height: 37px;
+        @include border-radius(5px);
+    }
+
+    .eoc-select {
+        @extend .eoc-form-element;
+        width: 270px;
+        padding: 9px;
+        margin-bottom: 10px;
+    }
+
+    .eoc-input {
+        @extend .eoc-form-element;
+        width: 270px;
+        padding: 9px;
+        margin-bottom: 10px;
+    }
+
+    .eoc-button, .eoc-button:link, .eoc-button:hover, .eoc-button:active, .eoc-button:visited {
+        padding: 10px;
+        background-color: $button-background-orange;
+        color: white;
+        margin-top: 15px;
+        line-height: 150%;
+        font-size:16px;
+        text-decoration: none !important;
+        cursor:pointer;
+        &:hover {color:$button-background-hover;}
+    }
+
+    .eoc-button[disabled] {
+        @extend .eoc-button;
+        background-color: $element-background-disabled; 
+    }
+}

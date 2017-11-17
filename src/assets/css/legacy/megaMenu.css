@@ -1,0 +1,108 @@
+ul.megamenu {	
+	margin: 0; 
+	padding: 0;
+	width: 100%;
+	list-style: none;
+}
+ul.megamenu, 
+ul.megamenu a {
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+}
+ul.megamenu a:active {
+	outline: none;
+}
+ul.megamenu ul {
+	padding:0;
+	margin:0;
+}
+ul.megamenu li a {
+	text-decoration:none;
+}
+ul.megamenu li .sub {
+	position: absolute;	
+	left: 0px !important;
+	display: none;
+	background: #019fe6;
+	padding: 0;
+	margin-top: 15px;
+}
+/*
+ul.megamenu li .sub.setPosition {
+	left: -392px;
+}
+*/
+ul.megamenu li .row {
+	clear: both; 
+	float: left; 
+	width: 100%; 
+	margin: 0 15px 15px 15px !important;
+}
+ul.megamenu li .sub ul {
+	list-style: none;
+	padding: 15px 0 0 0;
+	min-width: 190px;
+	text-align: left;
+	float: left;
+}
+ul.megamenu .sub ul li {
+	width: 100%;
+}
+ul.megamenu .sub ul li h2 {
+	padding: 0;  
+	margin: 0px 10px 0px 0px;
+	font-size: 11px;
+	font-weight: normal;
+}
+ul.megamenu .sub ul li h2 a {
+	padding:0;
+	margin:0;
+}
+ul.megamenu .sub ul li a {
+	float: none; 
+	text-indent: 0; 
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding:0;
+	margin:0;
+}
+ul.megamenu li.level0 {
+	display: inline-block;
+	padding: 15px 0px 3px 10px;
+}
+ul.megamenu li.level0 > a {
+	padding: 5px;
+	display: block;
+}
+
+ul.megamenu li.level0.current > a,
+ul.megamenu li a:hover,
+ul.megamenu li .current {
+	color: #00437a !important;
+	outline: none;
+}
+dib.sub ul { margin-left:8px; }
+#megamenu li.subheader { width: 130px; }
+#megamenu li.sublink { margin-bottom:6px; }
+#megamenu li.sublink a {
+	font-size: 13px;
+	color: #fff;
+	line-height: 18px;
+}
+#megamenu li.sublink a span {
+	display: inline-block;
+	float: left;
+	min-height: 20px;
+}
+#megamenu li.subheader h2 {
+	margin-bottom: 8px;
+}
+
+ul.megamenu .sub ul li h2 a {
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
