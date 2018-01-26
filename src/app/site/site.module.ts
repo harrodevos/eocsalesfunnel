@@ -10,11 +10,13 @@ import { FunnelComponent } from './funnel/funnel.component';
 import { PhoneNumberValidatorDirective } from '../common/validators/phone-validator';
 import { ModalComponent } from '../directives/modal.component';
 import { ModalService } from '../services/modal.service';
+import { PopupModule } from 'ng2-opd-popup';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    PopupModule.forRoot()
   ],
   exports: [
     HeaderComponent,

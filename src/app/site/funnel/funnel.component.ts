@@ -3,6 +3,7 @@ import { Customer } from './model/customer';
 import { NG_VALIDATORS} from '@angular/forms';
 import { PhoneNumberValidatorDirective } from '../../common/validators/phone-validator';
 import { ModalService } from '../../services/modal.service'
+import { Popup } from 'ng2-opd-popup'
 
 @Component({
   selector: 'eoc-body',
@@ -14,7 +15,7 @@ import { ModalService } from '../../services/modal.service'
 export class FunnelComponent {
   customer: Customer;
 
-  constructor(private modalService: ModalService) {
+  constructor(private modalService: ModalService, private popup:Popup) {
     this.customer = new Customer(0, '', '', '', '','','','','');
   }
 
@@ -23,10 +24,10 @@ export class FunnelComponent {
   }
 
   openModal(id: string){
-    this.modalService.open(id);
+    this.popup.show();
   }
 
   closeModal(id: string){
-      this.modalService.close(id);
+    this.popup.hide();
   }
 }
