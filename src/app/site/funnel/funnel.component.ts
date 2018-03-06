@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { Customer } from './model/customer';
 import { NG_VALIDATORS} from '@angular/forms';
 import { PhoneNumberValidatorDirective } from '../../common/validators/phone-validator';
-import { ModalService } from '../../services/modal.service'
 import { Popup } from 'ng2-opd-popup'
 
 @Component({
@@ -15,7 +14,7 @@ import { Popup } from 'ng2-opd-popup'
 export class FunnelComponent {
   customer: Customer;
 
-  constructor(private modalService: ModalService, private popup:Popup) {
+  constructor(private popup:Popup) {
     this.customer = new Customer(0, '', '', '', '','','','','');
   }
 

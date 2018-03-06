@@ -8,8 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { FunnelComponent } from './funnel/funnel.component';
 import { PhoneNumberValidatorDirective } from '../common/validators/phone-validator';
-import { ModalComponent } from '../directives/modal.component';
-import { ModalService } from '../services/modal.service';
 import { PopupModule } from 'ng2-opd-popup';
 
 @NgModule({
@@ -29,11 +27,10 @@ import { PopupModule } from 'ng2-opd-popup';
     FooterComponent,
     BodyComponent,
     FunnelComponent,
-    PhoneNumberValidatorDirective,
-    ModalComponent
+    PhoneNumberValidatorDirective
   ],
   providers: [
-    ModalService
+    
   ]
 })
 

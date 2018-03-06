@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { BodyComponent } from './site/body/body.component';
 import { FunnelComponent } from './site/funnel/funnel.component';
 
